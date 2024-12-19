@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="img3\button_image.png" />
+    <Content Include="img3\icon_game.ico" />
+    <Content Include="img3\Logo.png" />
+    <Content Include="img3\main_window_1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
