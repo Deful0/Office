@@ -75,6 +75,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Level_1.resx">
+      <DependentUpon>Level_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,6 +105,9 @@
     <Content Include="img3\button_image.png" />
     <Content Include="img3\icon_game.ico" />
     <Content Include="img3\Logo.png" />
+    <Content Include="img3\lvl_1.jpg" />
+    <Content Include="img3\lvl_1_1.jpg" />
+    <Content Include="img3\lvl_1_2.jpg" />
     <Content Include="img3\main_window_1.jpg" />
   </ItemGroup>
   <ItemGroup>
