@@ -76,13 +76,13 @@ namespace Main_Window
             if (randMan == 1)
             {
                 flag = true;
-                pictureBox1.Image = Image.FromFile("C:\\Users\\dmitr\\OneDrive\\Рабочий стол\\fbdf\\Level_1_cod\\Main_Window\\img3\\lvl_1_1.jpg");
+                pictureBox1.Image = Image.FromFile("..\\..\\img3\\lvl_1_1.jpg");
                 PrBar_Timer_function();
             }
             else if (randMan == 2)
             {
                 flag = false;
-                pictureBox1.Image = Image.FromFile("C:\\Users\\dmitr\\OneDrive\\Рабочий стол\\fbdf\\Level_1_cod\\Main_Window\\img3\\lvl_1_2.jpg");
+                pictureBox1.Image = Image.FromFile("..\\..\\img3\\lvl_1_2.jpg");
                 PrBar_Timer_function();
             }
         }
@@ -119,7 +119,7 @@ namespace Main_Window
             mistake--;
             //label2.Text = mistake.ToString();
             progressBar1.Value = mistake * 10;
-            pictureBox1.Image = Image.FromFile("C:\\Users\\dmitr\\OneDrive\\Рабочий стол\\fbdf\\Level_1_cod\\Main_Window\\img3\\lvl_1.jpg");
+            pictureBox1.Image = Image.FromFile("..\\..\\img3\\lvl_1.jpg");
             TimesIncident_function();
 
         }
@@ -132,7 +132,7 @@ namespace Main_Window
         {
             if (Time_Incident.Enabled == false && flag == false)
             {
-                pictureBox1.Image = Image.FromFile("C:\\Users\\dmitr\\OneDrive\\Рабочий стол\\fbdf\\Level_1_cod\\Main_Window\\img3\\lvl_1.jpg");
+                pictureBox1.Image = Image.FromFile("..\\..\\img3\\lvl_1.jpg");
                 TimesIncident_function();
                 PrBar_Timer.Stop();
             }
@@ -144,7 +144,7 @@ namespace Main_Window
         {
             if (Time_Incident.Enabled == false && flag == true)
             {
-                pictureBox1.Image = Image.FromFile("C:\\Users\\dmitr\\OneDrive\\Рабочий стол\\fbdf\\Level_1_cod\\Main_Window\\img3\\lvl_1.jpg");
+                pictureBox1.Image = Image.FromFile("..\\..\\img3\\lvl_1.jpg");
                 TimesIncident_function();
                 PrBar_Timer.Stop();
             }
