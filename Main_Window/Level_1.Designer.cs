@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level_1));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -35,6 +37,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.GameOver = new System.Windows.Forms.Timer(this.components);
+            this.Time_Incident = new System.Windows.Forms.Timer(this.components);
+            this.PrBar_Timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +103,7 @@
             this.button2.Size = new System.Drawing.Size(27, 27);
             this.button2.TabIndex = 14;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -107,6 +113,22 @@
             this.button3.Size = new System.Drawing.Size(27, 27);
             this.button3.TabIndex = 15;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // GameOver
+            // 
+            this.GameOver.Interval = 1000;
+            this.GameOver.Tick += new System.EventHandler(this.GameOver_Tick);
+            // 
+            // Time_Incident
+            // 
+            this.Time_Incident.Interval = 3000;
+            this.Time_Incident.Tick += new System.EventHandler(this.Time_Incident_Tick);
+            // 
+            // PrBar_Timer
+            // 
+            this.PrBar_Timer.Interval = 1000;
+            this.PrBar_Timer.Tick += new System.EventHandler(this.PrBar_Timer_Tick);
             // 
             // Level_1
             // 
@@ -121,6 +143,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Level_1";
             this.Text = "Level_1";
             this.Load += new System.EventHandler(this.Level_1_Load);
@@ -139,5 +162,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Timer GameOver;
+        private System.Windows.Forms.Timer Time_Incident;
+        private System.Windows.Forms.Timer PrBar_Timer;
     }
 }
