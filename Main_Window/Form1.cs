@@ -19,6 +19,7 @@ namespace Main_Window
             InitializeComponent();
             player.URL = "muzic2.mp3";
         }
+        
 
         // Метод для музыкального таймера
         private void muzikTimer_function()
@@ -58,5 +59,7 @@ namespace Main_Window
             player.controls.play();
             muzikTimer_function();
         }
+
+        
     }
 }
