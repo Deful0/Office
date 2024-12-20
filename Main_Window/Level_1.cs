@@ -16,5 +16,10 @@ namespace Main_Window
         {
             InitializeComponent();
         }
+
+        private void Level_1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
