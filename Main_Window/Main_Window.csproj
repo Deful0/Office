@@ -78,6 +78,9 @@
     <EmbeddedResource Include="Level_1.resx">
       <DependentUpon>Level_1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Level_2.resx">
+      <DependentUpon>Level_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,9 +111,19 @@
     <Content Include="img3\lvl_1.jpg" />
     <Content Include="img3\lvl_1_1.jpg" />
     <Content Include="img3\lvl_1_2.jpg" />
+    <Content Include="img3\lvl_2.jpg" />
     <Content Include="img3\main_window_1.jpg" />
+    <Content Include="sound\muzic2.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="WMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
