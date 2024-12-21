@@ -112,8 +112,12 @@
     <Content Include="img3\lvl_1_1.jpg" />
     <Content Include="img3\lvl_1_2.jpg" />
     <Content Include="img3\lvl_2.jpg" />
+    <Content Include="img3\lvl_2_1.jpg" />
+    <Content Include="img3\lvl_2_2.jpg" />
+    <Content Include="img3\lvl_2_3.jpg" />
+    <Content Include="img3\lvl_2_4.jpg" />
     <Content Include="img3\main_window_1.jpg" />
-    <Content Include="sound\muzic2.mp3" />
+    <Content Include="sound\muzic2.wav" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
