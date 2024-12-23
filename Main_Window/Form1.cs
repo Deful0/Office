@@ -8,30 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
+using System.Media;
 
 namespace Main_Window
 {
     public partial class Form1 : Form
     {
-        WindowsMediaPlayer player = new WindowsMediaPlayer();
+        public SoundPlayer sndPlayer = new SoundPlayer("..\\..\\sound\\muzic2.wav");
         public Form1()
         {
             InitializeComponent();
-            player.URL = "muzic2.mp3";
         }
-        
 
         // Метод для музыкального таймера
         private void muzikTimer_function()
         {
-            muzic_timer.Interval = 1000;
+            muzic_timer.Interval = 18000;
             muzic_timer.Start();
         }
 
         //main()
         private void Form1_Load(object sender, EventArgs e)
         {
-            player.controls.play();
+            sndPlayer.Play();
             muzikTimer_function();
         }
 
@@ -47,7 +46,6 @@ namespace Main_Window
         {
             Level_2 settingsForm = new Level_2();
             settingsForm.ShowDialog();
-
         }
         
 
@@ -55,8 +53,8 @@ namespace Main_Window
         private void muzik_timer_Tick(object sender, EventArgs e)
         {
             muzic_timer.Stop();
-            player.controls.stop();
-            player.controls.play();
+            sndPlayer.Stop();
+            sndPlayer.Play();
             muzikTimer_function();
         }
 

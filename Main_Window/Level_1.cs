@@ -31,9 +31,9 @@ namespace Main_Window
         {
 
             Random random = new Random();
-            int randTime = random.Next(1000, 3001);
+            int randTime = random.Next(1000, 2001);
 
-            Time_Incident.Interval = randTime; // 1-3 сек таймер
+            Time_Incident.Interval = randTime; // 1-2 сек таймер
             Time_Incident.Start();
 
         }
@@ -51,11 +51,12 @@ namespace Main_Window
         private void PrBar_Timer_function()
         {
 
-            PrBar_Timer.Interval = 2000;
+            PrBar_Timer.Interval = 1500;
             PrBar_Timer.Start();
 
         }
 
+        // main()
         private void Level_1_Load(object sender, EventArgs e)
         {
             gamesOver_timer_function();

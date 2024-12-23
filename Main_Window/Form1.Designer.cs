@@ -90,6 +90,11 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "by: Deful0";
             // 
+            // muzic_timer
+            // 
+            this.muzic_timer.Interval = 1000;
+            this.muzic_timer.Tick += new System.EventHandler(this.muzik_timer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
